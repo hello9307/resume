@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul,li,div{
+			padding: 0;
+			margin: 0;
+		}
+		li{
+			list-style: none;
+		}
+		.resume{
+			display: flex;
+			flex-flow: row;
+			width: 800px;
+			margin: 20px auto;
+		}
+		.left{
+			flex: 2;
+			padding: 20px 20px 20px 30px;
+			width: 300px;
+			background: #222;
+			color: #ddd;
+		}
+		.left h2{
+			border-bottom: 2px solid #aaa;
+			padding-bottom: 4px;
+		}
+		.left img{
+			width: 200px;
+			height: 200px;
+			border-radius: 50%; 
+		}
+		.left li:nth-child(2) p{
+			text-indent: 2em;
+		}
+		.left li:nth-child(3) span{
+			display: inline-block;
+			width: 100px;
+		}
+
+
+		.right{
+			flex: 3;
+			width: 500px;
+			padding: 20px 30px 20px 20px;
+			background-color: #ddd;
+		}
+		.right h1{
+			width: 400px;
+			margin: 10px auto;
+			font-size: 2.6em;
+			text-align: center;
+			padding-bottom: 5px;
+			border-bottom: 3px solid #222;
+		}
+		.right h2{
+			margin-left: -20px;
+			text-align: center;
+			width: 200px;
+		}
+		.right li:nth-child(2) h2{
+			background: green;
+		}
+		.right li:nth-child(3) h2{
+			background: yellow;
+		}
+		.education{
+			background: url('images/logo.jpeg')left 10px no-repeat;
+			padding-left: 150px;
+			height: 90px;
+		}
+	</style>
+</head>
+<body>
+	<div class="resume">
+		<div class="left">
+			<ul>
+				<li>
+					<img src="images/dog.png" alt="">
+				</li>
+				<li>
+					<h2>自我介绍</h2>
+					<p>
+						我叫张起，来自福建宁德，是本科的应届毕业生，
+						目前学习web前端，希望找一个有关方面的实习机会，
+						提升自己的能力。本人还算得上积极向上，热爱生活，
+						虽然比较懒散，但是遇到问题时一天能用12小时来攻克它，
+						不怎么主动说话，但是能诚心听人说教。个人生活准则：简单做人，认真做事，水到渠自然成。
+					</p>
+				</li>
+				<li>
+					<h2>专业技能</h2>
+					<span>javaScript:</span><progress value='60' max='100'></progress>
+					<br>
+					<span>ajax:</span><progress value='60' max='100'></progress>
+					<br>
+					<span>bootstrap:</span><progress value='70' max='100'></progress>
+					<br>
+					<span>jQuery:</span><progress value='60' max='100'></progress>
+					<br>
+					<span>html:</span><progress value='60' max='100'></progress>
+					<br>
+					<span>css:</span><progress value='70' max='100'></progress>
+				</li>
+				<li>
+					<h2>基本信息</h2>
+					<p>姓名：张 起</p>
+					<p><span></span>email：2567780905@qq.com</p>
+					<p><span></span>email：2567780905@qq.com</p>
+					<p><span></span>tel：15603839284</p>
+					<p><span></span>address：北京昌平区</p>
+					<p><span></span>gitHup：<a href="https://github.com/hello9307">gitHup</a></p>
+					<p>
+						<span></span>freeCodeCamp: 
+						<a href="https://www.freecodecamp.cn/hello9307">freeCodeCamp</a>
+					</p>
+					<p><span></span>codePen: <a href="https://codepen.io/Hello9307/">codePen</a></p>
+				</li>
+			</ul>
+		</div>
+		<div class="right">
+			<ul>
+				<li>
+					<h1>前端实习生简历</h1>
+				</li>
+				<li>
+					<h2>教育背景</h2>
+					<div>
+						<div class="education">
+							<p>学校：安阳工学院</p>
+							<p>专业：网络工程</p>
+							<p>毕业时间：2018年6月</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<h2>项目</h2>
+					<p>
+						<h4>原生carousel和tab</h4>
+						<div>
+							<span class="h5" ">描述：</span>原生js,css完成的轮播图和tab切换;还在不断的改进中
+							<br>
+							<span>carousel地址：</span>
+							<a href="https://hello9307.github.io/CAROUSEL/">轮播图</a>
+							<br>
+							<span>tab地址：</span>
+							<a href="https://hello9307.github.io/TAB/tab1/">tab切换</a>
+						</div>
+					</p>
+					<p>
+						<h4>js排序算法</h4>
+						<div>
+							<span>描述：</span>用js写的冒泡，快速，插入等排序算法。
+							<br>
+							<span>地址：</span>
+							<a href="https://github.com/hello9307/Sort">sort</a>
+						</div>
+					</p>
+					<p>
+						<h4>AJAX的使用</h4>
+						<div>
+							<span>描述：</span>ajax原理及封装;利用ajax完成的一个聊天案例。
+							<br>
+							<span>地址：</span>
+							<a href="https://github.com/hello9307/ajax">ajax</a>
+							<br>
+							<span>talkWithRobot地址：</span>
+							<a href="https://hello9307.github.io/talkWithRobot/chat.html">talkWithRobot
+							</a>
+						</div>
+					</p>
+					<p>
+						<h4>模仿京东首页</h4>
+						<div>
+							<div>
+								<img src="images/jd.jpg" alt="">
+							</div>
+							<p>
+								<span>步骤：</span>
+								用div,css完成界面的布局;
+								用css实现静态效果;
+								给界面增加轮播图和tab切换;
+								还有好多效果暂时没完成;
+								<br>
+								<span>地址：</span>
+								<a href="https://hello9307.github.io/JDinterface/">京东</a>
+							</p>
+						</div>
+					</p>
+					
+				</li>
+			</ul>
+		</div>	
+	</div>
+</body>
+</html>
